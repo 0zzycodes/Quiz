@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 class="finish">Quiz about Ibrahim (ozzycodes)</h1>
+        <h4 class="thanks">See how much you know about him</h4>
+      </div>
+      <div class="userForm">
+        <form id="userName">
+          <input id="user" type="text" placeholder="Enter your name" />
+          <input type="submit" value="Take Quiz" />
+        </form>
+      </div>
+
+      <div class="wrapper">
+        <form id="quiz" class="hide" name="quiz">
+          <ul>
+            <li class="Question">
+              <p>Am I a night owl or an early bird?</p>
+              <input type="radio" name="Q1" value="Night Owl" /> Night Owl
+              <br />
+              <input type="radio" name="Q1" value="Early Bird" /> Early Bird
+            </li>
+            <li class="Question">
+              <p>My favorite color is?</p>
+              <input type="radio" name="Q2" value="Black" /> Black
+              <br />
+              <input type="radio" name="Q2" value="Red" /> Red
+              <br />
+              <input type="radio" name="Q2" value="Purple" /> Purple
+              <br />
+              <input type="radio" name="Q2" value="Gray" /> Gray
+            </li>
+            <li class="Question">
+              <p>How old am I?</p>
+              <input type="radio" name="Q3" value="18" /> 18 <br />
+              <input type="radio" name="Q3" value="20" /> 20
+              <br />
+              <input type="radio" name="Q3" value="19" /> 19
+              <br />
+              <input type="radio" name="Q3" value="21" /> 21
+              <br />
+            </li>
+            <li class="Question">
+              <p>I prefers Coffee or Tea?</p>
+              <input type="radio" name="Q4" value="Tea" /> Tea
+              <br />
+              <input type="radio" name="Q4" value="Coffee" /> Coffee
+            </li>
+            <li class="Question">
+              <p>I prefers Space or Tab?</p>
+              <input type="radio" name="Q5" value="Space" /> Space
+              <br />
+              <input type="radio" name="Q5" value="Tab" /> Tab
+            </li>
+            <li class="Question">
+              <p>My favorite Operating System(OS) is?</p>
+              <input type="radio" name="Q6" value="Windows" />
+              Windows
+              <br />
+              <input type="radio" name="Q6" value="Linux" /> Linux
+            </li>
+            <li class="Question">
+              <p>My favorite anmimal would be?</p>
+              <input type="radio" name="Q7" value="Cat" />
+              Cat
+              <br />
+              <input type="radio" name="Q7" value="Dog" /> Dog
+            </li>
+            <li class="Question">
+              <p>Do I prefers working Alone or woring in Group?</p>
+              <input type="radio" name="Q8" value="Alone" /> Alone
+              <br />
+              <input type="radio" name="Q8" value="Group" /> Group
+            </li>
+            <li class="Question">
+              <p>What is my favorite subject?</p>
+              <input type="text" id="Q9" name="Q7" />
+            </li>
+          </ul>
+
+          <input type="submit" id="button" value="Submit" />
+        </form>
+        <div id="submitted">
+          <p id="Corrects"></p>
+          <p id="message"></p>
+        </div>
+      </div>
+      <div class="players">
+        <h3>People that have also participated</h3>
+        <div class="head">
+          <span>Names</span>
+          <span>Scores</span>
+        </div>
+        <ol class="candidates"></ol>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
