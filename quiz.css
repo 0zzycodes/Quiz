@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lobster|Monoton|Playball|Tangerine');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Playball', cursive;
 }
 body {
   height: 100vh;
@@ -9,7 +11,6 @@ body {
   text-align: center;
   background: #111111;
   color: #f2f2f2;
-  font-family: cursive;
 }
 input {
   padding: 8px 10px;
@@ -81,4 +82,16 @@ ol li,
 }
 ol li:nth-child(odd) {
   background: #777777;
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.contact a {
+  text-decoration: none;
+  color: #000;
+}
+.fa {
+  font-size: 1.4em;
 }
